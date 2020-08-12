@@ -1,0 +1,27 @@
+body {
+    background: url("https://raw.githubusercontent.com/Oscarce10/conversorip/2d85ac8de7f458702ef69d5b5ba5b1db339bda4d/img/svg/undraw_design_team_af2y.svg") #1d6fa5 no-repeat center center fixed;
+    font-family: "Balsamiq Sans", cursive;
+}
+
+#main {
+    margin-top: 50px;
+}
+#main #input-container {
+    background: #2acedb;
+    opacity: 0.95;
+}
+#main #input-container #card-titulo {
+    font-family: "Balsamiq Sans", cursive;
+}
+#main #input-container .label {
+    color: black;
+}
+
+@media (max-width: 800px) {
+    body {
+        background: #1d6fa5;
+        font-family: "Balsamiq Sans", cursive;
+    }
+}
+
+/*# sourceMappingURL=styles.css.map */

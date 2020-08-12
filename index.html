@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/flatly.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<div class="container" id="main">
+
+    <div class="card bg-transparent" id="card">
+        <div class="card-header bg-primary text-white text-center" id="card-titulo">
+            Conversor de IP binario y decimal punteado
+        </div>
+        <div class="card-body" id="input-container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 row" id="conv1">
+                    <div class="col-11">
+                        <label class="label">IP Punteada</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text label" id="label-conv1">192.168.0.0</span>
+                            </div>
+                            <input type="text" class="form-control label" id="punteada" aria-describedby="basic-addon3" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 row" id="conv2">
+                    <div class="col-12">
+                        <label for="binaria" class="label">IP Binaria</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control label" id="binaria" aria-describedby="basic-addon3" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-3"></div>
+                <div class="col-md-2 col-sm-6" id="btn-cont">
+                    <button class="btn btn-primary" id="btn-convertir" type="button">Convertir!</button>
+                </div>
+                <div class="col-5"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="card text-center" style="margin-top: 30px">
+        <div class="card-header bg-primary text-white">
+            Ultimas conversiones
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Punteada</th>
+                    <th scope="col">Binaria</th>
+                </tr>
+                </thead>
+                <tbody id="tabla">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer bg-dark">
+            Ultima actualizacion:
+        </div>
+    </div>
+
+
+</div>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
